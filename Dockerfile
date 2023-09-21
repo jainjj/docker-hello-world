@@ -4,7 +4,7 @@ LABEL maintainer="Chris <c@crccheck.com>"
 
 ADD index.html /www/index.html
 
-# EXPOSE $PORT
+EXPOSE $PORT 80
 
 HEALTHCHECK CMD nc -z localhost $PORT
 
